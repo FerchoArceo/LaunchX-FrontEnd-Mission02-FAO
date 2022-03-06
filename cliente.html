@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pastelería Far Far Away</title>
+    </head>
+    <body>
+        <nav>
+            <u1>
+                <img src="./Logos/Logo v1.2.png" alt="Logo de la pastelería">
+            </u1>
+            <u2>
+                <a href="./pastelero.html">Cambiar a vista de pastelero</a>
+            </u2>
+        </nav>
+        <br>
+        <h1>Bienvenido a su pastelería de confianza.</h1>
+        <p>
+            A continuación se presentan los diferentes sabores de pasteles que ofrecemos. Crea tu propia combinación seleccionando <br>
+            los sabores de masa que deseas agregar (diferentes sabores serán diferentes pisos de tu pastel!).
+        </p>
+        <!-- Para centrar las imagenes en un renglón se puede usar CSS:
+             https://stackoverflow.com/questions/54633409/how-to-align-images-horizontally-side-by-side-with-captions-underneath
+        -->
+        <form id="form1" method="post" onsubmit="alert('Se ha encargado satisfactoriamente su orden!\n\n\nTotally not a Shrek reference btw.')">
+            <table>
+                <tr>
+                    <th style="padding:0 15px 0 15px;">
+                        <img src="./IMGS/Vainilla.png" alt="Pastel de Vainilla">
+                    </th>
+                    <th style="padding:0 15px 0 15px;">
+                        <img src="./IMGS/Chocolate.png" alt="Pastel de Chocolate">
+                    </th>
+                    <th style="padding:0 15px 0 15px;">
+                        <img src="./IMGS/Fresa.png" alt="Pastel de Fresa">
+                    </th>
+                </tr>
+                <tr>
+                    <td style="padding:0 15px 0 15px;">
+                        <input type="checkbox" id="masa1" name="masa1" value="Pastel de vainilla">
+                        <label for="masa1">Pastel de vainilla</label><br>
+                    </td>
+                    <td style="padding:0 15px 0 15px;">
+                        <input type="checkbox" id="masa2" name="masa2" value="Pastel de chocolate">
+                        <label for="masa2">Pastel de chocolate</label><br>
+                    </td>
+                    <td style="padding:0 15px 0 15px;">
+                        <input type="checkbox" id="masa3" name="masa3" value="Pastel de Fresa">
+                        <label for="masa3">Pastel de fresa</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>$150</th>
+                    <th>$200</th>
+                    <th>$200</th>
+                </tr>
+            </table>
+            <p>Si tienes instrucciones especificas respecto al sabor de cada piso haznoslas saber a continuación:</p>
+            <label for="instruccionesMasa">Instrucciones:</label>
+            <input type="text" id="instruccionesMasa" name="instruccionesMasa">
+            <br>
+            <h3>A continuación se presentan los diferentes toppings que ofrecemos. Selecciona todos los que desees!</h3>
+            <table>
+                <tr>
+                    <th style="padding:0 15px 0 15px;">
+                        <p><img src="./IMGS/Chocolate-topping.png" alt="Topping de trozos de chocolate" width="110"></p>
+                    </th>
+                    <th style="padding:0 15px 0 15px;">
+                        <p><img src="./IMGS/Duraznos.png" alt="Topping de duraznos" width="110"></p>
+                    </th>
+                    <th style="padding:0 15px 0 15px;">
+                        <p><img src="./IMGS/Fresas.png" alt="Topping de fresas" width="110"></p>
+                    </th>
+                    <th style="padding:0 15px 0 15px;">
+                        <p><img src="./IMGS/Galletas.png" alt="Topping de galletas troceadas" width="110"></p>
+                    </th>
+                    <th style="padding:0 15px 0 15px;">
+                        <p><img src="./IMGS/Lunetas.png" alt="Topping de Lunetas" width="110"></p>
+                    </th>
+                </tr>
+                <tr>
+                    <td style="padding:0 15px 0 15px; align-items: center;">
+                        <input type="checkbox" id="topping1" name="topping1" value="Trozos de chocolate">
+                        <label for="topping1">Trozos de chocolate</label><br>
+                    </td>
+                    <td style="padding:0 15px 0 15px; align-items: center;">
+                        <input type="checkbox" id="topping2" name="topping2" value="Duraznos">
+                        <label for="topping2">Rodajas de duraznos</label><br>
+                    </td>
+                    <td style="padding:0 15px 0 15px; align-items: center;">
+                        <input type="checkbox" id="topping3" name="topping3" value="Fresas">
+                        <label for="topping3">Rebanadas de fresas</label><br>
+                    </td>
+                    <td style="padding:0 15px 0 15px; align-items: center;">
+                        <input type="checkbox" id="topping4" name="topping4" value="Galletas troceadas">
+                        <label for="topping3">Galletas troceadas</label><br>
+                    </td>
+                    <td style="padding:0 15px 0 15px; align-items: center;">
+                        <input type="checkbox" id="topping5" name="topping5" value="Lunetas">
+                        <label for="topping3">Lunetas</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th style="padding:0 15px 0 15px;">$50</th>
+                    <th style="padding:0 15px 0 15px;">$25</th>
+                    <th style="padding:0 15px 0 15px;">$25</th>
+                    <th style="padding:0 15px 0 15px;">$35</th>
+                    <th style="padding:0 15px 0 15px;">$30</th>
+                </tr>
+            </table>
+            <p>Si tienes instrucciones especificas respecto a los toppings haznoslas saber a continuación:</p>
+            <label for="InstruccionesToppings">Instrucciones:</label>
+            <input type="text" id="InstruccionesToppings" name="InstruccionesToppings">
+            <br>
+            <h4>Crea tu combinación perfecta de masa y toppings! Luego finaliza tu orden añadiendo tus datos personales y dando la orden de encender los hornos:</h4>
+            <table>
+                <th style="padding:0 15px 0 15px;">
+                    <label for="nombre">Nombre y apellidos:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </th>
+                <th style="padding:0 15px 0 15px;">
+                    <label for="nombre">Telefono personal:</label>
+                    <input type="number" id="telefono" name="telefono" minlength="10" maxlength="10">
+                </th>
+                <th style="padding:0 15px 0 15px;">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" minlength="8">
+                </th>
+            </table>
+            <br>
+            <input type="submit" value="¡Enciende los hornos pastelero!">
+            <input type="reset" value="Cambie de opinión, limpiar datos.">
+        </form>
+        <br><br><br>
+        <hr>
+        <p>
+            Pastelería Far Far Away.<br>
+            Dirección: Avenida Siempreviva 742.<br>
+            Horarios de atención: 8:00 a.m a 4:00 p.m todos los días.<br>
+        </p>
+        <hr>
+</body>
+</html>
